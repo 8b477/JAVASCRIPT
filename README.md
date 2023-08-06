@@ -1,4 +1,4 @@
-# 0_reviewJS
+# Sommaire : 0_reviewJS
 
 1. Console.
 2. FALSY ou TRUSTLY.
@@ -23,7 +23,7 @@ https://www.w3schools.com/js/js_number_methods.asp
 =>
 https://www.w3schools.com/js/js_arrays.asp
 
-# 1_reviewJS
+# Sommaire : 1_reviewJS
 
 ### EVENT
 1. Click event
