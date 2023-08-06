@@ -1,0 +1,2 @@
+# JAVASCRIPT MEMO
+
