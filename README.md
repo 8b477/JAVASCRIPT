@@ -19,7 +19,7 @@ https://www.w3schools.com/js/js_string_methods.asp
 => 
 https://www.w3schools.com/js/js_number_methods.asp
 
-- Les méthodes sur les number
+- Les méthodes sur les tableaux
 =>
 https://www.w3schools.com/js/js_arrays.asp
 
