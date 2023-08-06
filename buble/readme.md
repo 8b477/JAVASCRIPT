@@ -9,12 +9,12 @@ Le jeu est lancé à l'aide du bouton start, au bout d'un temps donnée les poin
 -----------------------------------------------------------------
 
 ## FIXE ME
-1.Faire une boucle while pour le start.
+1. Faire une boucle while pour le start.
 
 
 ## TO DO
-1.Faire en sorte que quand un certain nombre de secondes soit  passer stopé le jeu.
+1. Faire en sorte que quand un certain nombre de secondes soit  passer stopé le jeu.
 
-2.Afficher une demande pour restart le jeu.
+2. Afficher une demande pour restart le jeu.
 
-3.Metter en place un dashboard avec les meilleurs score.
+3. Metter en place un dashboard avec les meilleurs score.
