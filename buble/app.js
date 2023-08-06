@@ -65,11 +65,3 @@ if (startGame) {
         }
     });
 }
-
-// Faire une boucle while pour le start
-
-// Faire en sorte que quand un certain nombre de secondes soit  passer stopé le jeu
-
-// Afficher une demande pour restart le jeu
-
-// Metter en place un dashboard avec les meilleurs score
