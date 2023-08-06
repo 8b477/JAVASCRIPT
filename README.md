@@ -23,6 +23,10 @@ https://www.w3schools.com/js/js_number_methods.asp
 =>
 https://www.w3schools.com/js/js_arrays.asp
 
+- Les méthodes sur les dates
+=>
+https://www.w3schools.com/js/js_dates.asp
+
 # Sommaire : 1_reviewJS
 
 ### EVENT
