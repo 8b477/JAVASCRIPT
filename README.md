@@ -32,13 +32,13 @@ https://www.w3schools.com/js/js_arrays.asp
 4. Scroll Event
 5. Form Events
 6. Load event 
---------------
+--
 7. ForEach 
 8. addEventListener Vs onclick
 9. Bubbling 
 10. Usecapture 
 11. Stop propagation
--------------
+--
 ### BOM 
 12. Objet Window
 13. CONFIRM 
