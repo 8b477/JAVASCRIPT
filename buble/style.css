@@ -1,0 +1,35 @@
+body {
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: rgba(187, 194, 189, 0.82);
+}
+
+h2 {
+    text-align: center;
+}
+
+button {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.buble {
+    position: absolute;
+    top: 120%;
+    border-radius: 1000px;
+    background-color: green;
+    animation: anim 8s forwards;
+    filter: hue-rotate(0deg);
+    opacity: 0;
+}
+
+
+@keyframes anim {
+    to {
+        top: -300px;
+        filter: hue-rotate(720deg);
+        opacity: 1;
+    }
+}
