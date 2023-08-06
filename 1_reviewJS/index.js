@@ -197,8 +197,9 @@ document.body.addEventListener(
 
 // https://gomakethings.com/what-is-that-third-argument-on-the-vanilla-js-addeventlistener-method-and-when-do-you-need-it/
 
-//-------------------------------------------------
-// Stop propagation
+// ------------------------
+// ==> Stop propagation <==
+// ------------------------
 // questionContainer.addEventListener("click", (e) => {
 //   alert("Test !");
 //   e.stopPropagation();
