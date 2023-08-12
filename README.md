@@ -1,4 +1,4 @@
-# 0_reviewJS
+# Sommaire : 0_reviewJS
 
 1. Console.
 2. FALSY ou TRUSTLY.
@@ -23,7 +23,11 @@ https://www.w3schools.com/js/js_number_methods.asp
 =>
 https://www.w3schools.com/js/js_arrays.asp
 
-# 1_reviewJS
+- Les méthodes sur les dates
+=>
+https://www.w3schools.com/js/js_dates.asp
+
+# Sommaire : 1_reviewJS
 
 ### EVENT
 1. Click event
@@ -32,13 +36,13 @@ https://www.w3schools.com/js/js_arrays.asp
 4. Scroll Event
 5. Form Events
 6. Load event 
---------------
+--
 7. ForEach 
 8. addEventListener Vs onclick
 9. Bubbling 
 10. Usecapture 
 11. Stop propagation
--------------
+--
 ### BOM 
 12. Objet Window
 13. CONFIRM 
