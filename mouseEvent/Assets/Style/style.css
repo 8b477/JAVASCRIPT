@@ -1,0 +1,120 @@
+/* <=========> VARIABLE <=========>*/
+:root {
+    --eyes_color: greenyellow;
+    --eyes_retina: rgb(203, 84, 84);
+}
+
+/* <==========> RESET <==========>*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* <==========> PAGE <==========>*/
+body {
+    cursor: none;
+    overflow: hidden;
+}
+
+#wrapper {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+}
+
+.container {
+    height: 100vh;
+    width: 33.33%;
+}
+
+#blue {
+    background-color: aqua;
+}
+
+#yellow {
+    background-color: rgb(208, 255, 0);
+}
+
+
+/* <==========> YEUX <==========>*/
+.circle {
+    border-radius: 1000px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    mix-blend-mode: difference;
+}
+
+/*GAUCHE*/
+#circleOne {
+    height: 14px;
+    width: 14px;
+    background-color: black;
+}
+
+#circleTwo {
+    height: 100px;
+    width: 100px;
+    background-color: var(--eyes_retina);
+    transition: 50ms ease;
+}
+
+/*DROITE*/
+#circleThree {
+    height: 250px;
+    width: 250px;
+    background-color: var(--eyes_color);
+}
+
+#circleFour {
+    height: 250px;
+    width: 250px;
+    background-color: var(--eyes_color);
+}
+
+#circleFive {
+    height: 100px;
+    width: 100px;
+    background-color: var(--eyes_retina);
+    transition: 50ms ease;
+}
+
+
+/* <==========> NEZ <==========>*/
+#noze {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 30px solid red;
+}
+
+
+/* <==========> BOUCHE <==========>*/
+#mouth {
+    height: 80px;
+    width: 227px;
+    background-color: brown;
+    border-radius: 30%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+
+/* <==========> LANGUE <==========>*/
+span {
+    height: 26%;
+    width: 67px;
+    background-color: pink;
+    position: absolute;
+    border-top-left-radius: 57px;
+    border-top-right-radius: 57px;
+    left: 50%;
+    bottom: -14%;
+    transform: translate(-50%, -50%);
+}

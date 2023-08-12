@@ -36,32 +36,31 @@ function createBuble() {
 button.addEventListener("click", () => {
     if (!startGame)
         startGame = true;
-    console.log(startGame)
-})
 
-if (startGame) {
-    //Interval de création d'une nouvelle bulle
-    setInterval(() => {
-        createBuble();
-    }, 2000);
-
-    // Attendre 4sec avant de lancer le clear
-    setTimeout(() => {
-
+    if (startGame) {
+        //Interval de création d'une nouvelle bulle
         setInterval(() => {
-            //CLEAR LA BULLE DU DOM
-            gamingZone.firstChild.remove();
-        }, 2200);
+            createBuble();
+        }, 2000);
 
-    }, 4000);
+        // Attendre 4sec avant de lancer le clear
+        setTimeout(() => {
+
+            setInterval(() => {
+                //CLEAR LA BULLE DU DOM
+                gamingZone.firstChild.remove();
+            }, 2200);
+
+        }, 4000);
 
 
-    window.addEventListener("click", (e) => {
+        window.addEventListener("click", (e) => {
 
-        if (e.target.classList.value == 'buble') {
+            if (e.target.classList.value == 'buble') {
 
-            console.log(e.target.classList.remove("buble"))
-            score.innerText = numberScore++;
-        }
-    });
-}
+                console.log(e.target.classList.remove("buble"))
+                score.innerText = numberScore++;
+            }
+        });
+    }
+})
