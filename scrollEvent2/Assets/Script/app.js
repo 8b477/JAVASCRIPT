@@ -19,16 +19,17 @@ window.addEventListener('scroll', () => {
     // Event on first picture
     if (valueScroll > 52) {
         imgImprovise.style.opacity = 1;
-        imgImprovise.style.transform = 'translateX(0)';
+        imgImprovise.style.transform = 'none';
     }
 
     //Event on popup
     if (valueScroll > 85) {
         popup.style.opacity = 1;
-        popup.style.transform = 'translateX(0)';
+        popup.style.transform = 'none';
     }
 })
 
 closeBtn.addEventListener('click', () => {
-    popup.style.display = 'none';
+    popup.style.opacity = 0;
+    popup.style.transform = 'translateX(500px)';
 })
