@@ -1,4 +1,5 @@
 let valueScroll = 0;
+let playOnce = true;
 
 window.addEventListener('scroll', () => {
 
@@ -23,9 +24,10 @@ window.addEventListener('scroll', () => {
     }
 
     //Event on popup
-    if (valueScroll > 85) {
+    if (valueScroll > 85 && playOnce) {
         popup.style.opacity = 1;
         popup.style.transform = 'none';
+        playOnce = false;
     }
 })
 
