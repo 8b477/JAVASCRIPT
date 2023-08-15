@@ -1,0 +1,18 @@
+nav {
+    background: burlywood;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+li {
+    list-style-type: none;
+}

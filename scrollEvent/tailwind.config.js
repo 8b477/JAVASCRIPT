@@ -7,3 +7,5 @@ module.exports = {
   plugins: [],
 }
 
+// Folder JS
+// ,./scrollEvent/Assets/Script/app.js
