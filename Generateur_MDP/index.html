@@ -11,6 +11,20 @@
 
 <body>
 
+    <div class="app">
+
+        <input type="text" value="Générateur de MDP" id="password-output" readonly>
+
+        <div class="range-container">
+            <input type="range" name="" id="password-length" min="4" max="24" value="8"
+                oninput="document.getElementById('display-passwword-length').value=this.value">
+        </div>
+
+        <input type="text" name="" id="display-passwword-length" value="8" readonly>
+
+    </div>
+
+
 </body>
 
 </html>
