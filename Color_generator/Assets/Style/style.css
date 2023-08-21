@@ -1,0 +1,28 @@
+:root {
+    --colorRed: 100;
+    --colorGreen: 150;
+    --colorBlue: 200;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    line-height: 100px;
+    color: antiquewhite;
+    background-color: black;
+    height: 100px;
+    width: 300px;
+    border-radius: 30px;
+    mix-blend-mode: luminosity;
+}
+
+span {
+    color: rgb(var(--colorRed), var(--colorGreen), var(--colorBlue));
+}
