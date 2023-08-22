@@ -5,24 +5,29 @@ function addStorage() {
     window.localStorage.todos = liste.innerHTML;
 };
 
-console.log(liste);
 
 function displayStorage() {
-    if (liste.innerHTML) {
+    if (window.localStorage.todos) {
         liste.innerHTML = window.localStorage.todos;
+        console.log("display");
     } else {
-        liste.innerHTML = `<li>Click sur une tâche pour la valider puis pour la supprimer</li>`;
+        liste.innerHTML = `<li>Un click pour valider et une deuxième fois pour supprimer</li>`;
+        console.log('dehors');
     }
 }
 
-window.addEventListener('load', displayStorage);
 
 // Je récupère la valeur entrée dans mon input
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    // J'affiche la valeur dans un <li>
-    liste.innerHTML += `<li>${inputTask.value}</li>`
-    addStorage();
+    if (inputTask.value) {
+        // J'affiche la valeur dans un <li>
+        liste.innerHTML += `<li>${inputTask.value}</li>`
+        inputTask.value = "";
+        addStorage();
+    } else {
+        alert('Pas de valeur à ajouter !')
+    }
 });
 
 
@@ -30,20 +35,11 @@ form.addEventListener('submit', (e) => {
 liste.addEventListener('click', (e) => {
     if (e.target.classList.contains('validate-button')) {
         e.target.remove();
+        addStorage();
     } else {
         e.target.classList.add('validate-button')
     }
 });
 
 
-
-/* <form action="">
-<div class="container-task">
-    <label for="task-input">Entrez une tâche :</label>
-    <input type="text" id="task-input" autocomplete="off">
-    <button id="button-submit" type="submit">Ajouter</button>
-    <ul>
-
-    </ul>
-</div>
-</form> */
+window.addEventListener('load', displayStorage);
