@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+input {
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+button {
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 3rem;
+    font-weight: 700;
+}
