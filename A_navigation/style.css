@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+    height: 250px;
+    width: 300px;
+    margin: 2rem;
+    border-radius: 30px;
+}
+
+.container-page {
+    border: 5px solid rgb(243, 243, 243);
+}

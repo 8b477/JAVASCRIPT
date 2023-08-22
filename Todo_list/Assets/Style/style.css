@@ -1,0 +1,71 @@
+:root {
+    --color-primary: rgb(30, 35, 52);
+    --color-title: rgb(135, 110, 255);
+    --color-texte: rgb(255, 255, 255);
+    --color-btn: rgb(87, 112, 255);
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--color-primary);
+    color: var(--color-texte);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    border: solid 7px var(--color-btn);
+    border-radius: 20px;
+    height: 650px;
+    width: 600px;
+    padding: 1rem;
+}
+
+.container-task {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.container-task>input {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    font-size: 1.6rem;
+    border-radius: 15px;
+    background-color: var(--color-primary);
+    border-color: var(--color-title);
+}
+
+.container-task>input:focus {
+    outline: none;
+    border: 2px solid aqua;
+    color: var(--color-texte);
+}
+
+.container-task>button {
+    width: 150px;
+    padding: 0.8rem;
+    margin: 0.4rem auto;
+    border-radius: 10px;
+    border-color: var(--color-title);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: var(--color-btn);
+
+}
+
+label {
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 20px;
+    color: var(--color-title);
+}
