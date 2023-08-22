@@ -1,51 +1,49 @@
-
 const form = document.querySelector('form');
-const taskInput = document.getElementById('task-input');
 const liste = document.querySelector('ul');
 
-let listeEnfant;
-let arrayTask = [];
-let newTask = "";
+function addStorage() {
+    window.localStorage.todos = liste.innerHTML;
+};
 
+console.log(liste);
 
-taskInput.addEventListener('input', (e) => {
-    if (e.target.value) {
-        newTask = e.target.value;
+function displayStorage() {
+    if (liste.innerHTML) {
+        liste.innerHTML = window.localStorage.todos;
+    } else {
+        liste.innerHTML = `<li>Click sur une tâche pour la valider puis pour la supprimer</li>`;
     }
-    else {
-        newTask = "";
-    }
-});
+}
 
+window.addEventListener('load', displayStorage);
 
-form.addEventListener("submit", (e) => {
-
+// Je récupère la valeur entrée dans mon input
+form.addEventListener('submit', (e) => {
     e.preventDefault();
+    // J'affiche la valeur dans un <li>
+    liste.innerHTML += `<li>${inputTask.value}</li>`
+    addStorage();
+});
 
-    if (newTask) {
-        arrayTask.push(newTask);
 
-        arrayTask.map(item => {
-            return liste.innerHTML += `<li class='listeEnfant'>${item}</>`;
-        });
-
-        listeEnfant = document.querySelectorAll('.listeEnfant');
-        listeEnfant.forEach(item => {
-            item.addEventListener('click', (e) => {
-                prompt("VALIDE")
-            });
-            item.addEventListener('click', (e) => {
-                alert('SUPP')
-                e.target.remove();
-            });
-        });
-
-        arrayTask = [];
-    }
-    else {
-        alert('Veuillez entré une valeur');
-        taskInput.focus();
+// Je met un évènement pour supprimer les listes au click
+liste.addEventListener('click', (e) => {
+    if (e.target.classList.contains('validate-button')) {
+        e.target.remove();
+    } else {
+        e.target.classList.add('validate-button')
     }
 });
 
 
+
+/* <form action="">
+<div class="container-task">
+    <label for="task-input">Entrez une tâche :</label>
+    <input type="text" id="task-input" autocomplete="off">
+    <button id="button-submit" type="submit">Ajouter</button>
+    <ul>
+
+    </ul>
+</div>
+</form> */
